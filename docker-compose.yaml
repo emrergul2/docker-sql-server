@@ -1,0 +1,16 @@
+version: '3'
+services:
+  ee-mmsql:
+    image: mcr.microsoft.com/mssql/server
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Emre1234
+      - MSSQL_PID=Developer
+    ports:
+      - "1433:1433"
+    hostname: sa1234
+    # volumes:
+    #   - mmsql-volume
+
+    # volumes:
+    #   mssql-volume:
